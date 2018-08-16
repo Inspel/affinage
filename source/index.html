@@ -14,16 +14,16 @@
     <span class="upper-block__number">73</span>
     <ul class="upper-block__services-list">
       <li class="upper-block__service-element">
-        <a class="upper-block__service-link">Автобусы</a>
+        <a class="upper-block__service-link" href="#">Автобусы</a>
       </li>
       <li class="upper-block__service-element">
-        <a class="upper-block__service-link">Столовая</a>
+        <a class="upper-block__service-link" href="#">Столовая</a>
       </li>
       <li class="upper-block__service-element">
-        <a class="upper-block__service-link">Этажи</a>
+        <a class="upper-block__service-link" href="#">Этажи</a>
       </li>
       <li class="upper-block__service-element">
-        <a class="upper-block__service-link">Территории</a>
+        <a class="upper-block__service-link" href="#">Территории</a>
       </li>
     </ul>
     <form class="upper-block__search-form" role="search">
@@ -34,7 +34,7 @@
       <img class="upper-block__messages-icon" src="#">
       <span class="upper-block__messages-counter">12</span>
     </a>
-    <a class="upper-block__user-link">
+    <a class="upper-block__user-link button">
       <img class="upper-block__user-pic" src="#">
       <span class="upper-block__user-name">Александр</span>
     </a>
@@ -85,6 +85,135 @@
       </footer>
     </blockquote>
   </div>
+
+  <section class="page-content__info-carousel info-carousel">
+    <h2 class="visually-hidden">Информация</h2>
+    <ul class="info-carousel__list">
+      <li class="info-carousel__element">
+        <header class="info-carousel__employee">
+          <img class="info-carousel__icon" src="#" alt="Царенко Владимир">
+          <h3 class="info-carousel__employee-name">Царенко Владимир<br>
+            <span class="info-carousel__employee-position">
+              Главный свециалист
+            </span>
+          </h3>
+        </header>
+        <ul class="info-carousel__info-list">
+          <li class="info-carousel__info-element">
+            <p class="info-carousel__date">12 декабря</p>
+            <a class="info-carousel__link" href="#">
+              <h4 class="info-carousel__text info-carousel__text--important">Встреча с представителями банка ВТБ24</h4>
+            </a>
+          </li>
+          <li class="info-carousel__info-element">
+            <p class="info-carousel__date">13 января</p>
+            <a class="info-carousel__link" href="#">
+              <h4 class="info-carousel__text info-carousel__text--document">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</h4>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="info-carousel__controls">
+      <div class="info-carousel__arrows-wrapper">
+        <button class="info-carousel__arrow-left" title="Влево"></button>
+        <button class="info-carousel__arrow-right" title="Вправо"></button>
+      </div>
+      <div class="info-carousel__toggles-wrapper">
+        <span class="info-carousel__toggle"></span>
+        <span class="info-carousel__toggle info-carousel__toggle--active"></span>
+        <span class="info-carousel__toggle"></span>
+        <span class="info-carousel__toggle"></span>
+        <span class="info-carousel__toggle"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-content__news news">
+    <h2 class="visually-hidden">Новости</h2>
+    <ul class="news__list">
+      <li class="news__element">
+        <article class="news__card">
+          <a class="news__link--south">
+            <img class="news__image" src="#" alt="Иллюстрация">
+            <h3 class="news__title">ЕВРАЗ передал здание шахты &laquo;МУК-96&raquo; Междуреченску</h3>
+          </a>
+          <p class="news__date">Сегодня</p>
+        </article>
+      </li>
+      <li class="news__element">
+        <article class="news__card">
+          <a class="news__link--south">
+            <img class="news__image" src="#" alt="Иллюстрация">
+            <h3 class="news__title">На теплоэлектроцентрали ЕВРАЗ Южкокса внедрили систему LOTO</h3>
+          </a>
+          <p class="news__date">Сегодня</p>
+        </article>
+      </li>
+      <li class="news__element">
+        <article class="news__card">
+          <a class="news__link--zsmk">
+            <img class="news__image" src="#" alt="Иллюстрация">
+            <h3 class="news__title">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</h3>
+          </a>
+          <p class="news__date">Вчера</p>
+        </article>
+      </li>
+      <li class="news__element">
+        <article class="news__card">
+          <a class="news__link--ntmk">
+            <img class="news__image" src="#" alt="Иллюстрация">
+            <h3 class="news__title">ЕВРАЗ НТМК повышает эффективность выплавки стали</h3>
+          </a>
+          <p class="news__date">19 декабря</p>
+        </article>
+      </li>
+    </ul>
+    <div class="news__buttons-wrapper">
+      <a class="news__button-all button">ВСЕ НОВОСТИ</a>
+      <a class="news__button-region button">МОЙ РЕГИОН</a>
+    </div>
+  </section>
+
+  <footer>
+    <section class="footer__element">
+      <h2 class="visually-hidden">Наши сотрудники важны для нас</h2>
+      <img class="footer__logo" src="#" alt="ЕВРАЗ">
+      <p class="footer__text">Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
+    </section>
+    <section class="footer__element">
+      <h2 class="footer__element-header footer__element-header--hotline">Горячая линия</h2>
+      <ul class="footer__hotline-list">
+        <li class="footer__hotline-element">
+          <p class="footer__hotline-number">8-800-555-88-88<span class="footer__hotline-description">для сотрудников российских предприятий</span></p>
+        </li>
+        <li class="footer__hotline-element">
+          <p class="footer__hotline-number">0-800-502-118<span class="footer__hotline-description">для сотрудников украинских предприятий</span></p>
+        </li>
+        <li class="footer__hotline-element">
+          <p class="footer__hotline-number">8-800-080-43-58<span class="footer__hotline-description">для сотрудников ЕВРАЗ Каспиан Сталь</span></p>
+        </li>
+      </ul>
+      <a class="footer__hotline-email">vopros@evraz.com</a>
+      <a class="footer__hotline-message-link button">Написать в горячую линию</a>
+    </section>
+    <section class="footer__element">
+      <div class="footer__stocks-wrapper">
+        <h2 class="footer__element-header">Биржевые котировки</h2>
+        <p class="footer__text">28 декабря 12:35 (GMT)</p>
+      </div>
+      <div class="footer__stocks-wrapper">
+        <p class="footer__stocks-price">
+          EVRAZ (LSE): <b>225.10</b> GBX<span class="footer__stocks-change">1.20 (0.54%)</span>
+        </p>
+        <p class="footer__stocks-points">
+        <li class="">
+
+      </div>
+
+    </section>
+  </footer>
+
 </main>
 
 </body>

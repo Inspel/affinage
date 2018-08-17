@@ -33,11 +33,11 @@
         <button class="upper-block__search-submit" type="submit"></button>
         <input class="upper-block__search-input" type="search" name="q" placeholder="Поиск">
       </form>
-      <a class="upper-block__messages-link">
+      <a class="upper-block__messages-link" href="#">
         <img class="upper-block__messages-icon" src="img/messages.png" width="23" height="16" alt="Ваши сообщения">
         <span class="upper-block__messages-counter">12</span>
       </a>
-      <a class="upper-block__user-link button">
+      <a class="upper-block__user-link button" href="#">
         <img class="upper-block__user-pic" src="img/userpic.png" width="30" height="30" alt="Пользователь">
         <span class="upper-block__user-name">Александр</span>
       </a>
@@ -72,70 +72,74 @@
 
     <h1 class="visually-hidden">Наша компания</h1>
 
-    <section class="page-content__intro">
-      <h2 class="visually-hidden">Вступительная часть</h2>
-      <article class="page-content__intro-video video">
-        <header class="video__header">
-          <h3 class="video__main-title">ЕВРАЗ ТВ</h3>
-          <h4 class="video__video-title">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</h4>
-        </header>
-        <video class="intro__video" poster="img/video-placeholder.png">
-          <source src="#">
-        </video>
-      </article>
-      <blockquote class="page-content__intro-quote quote">
-        <cite class="quote__author">Иванов Алексей</cite>
-        <p class="quote__text">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на запросы клиентов, поставляющей продукцию высокого качестве...</p>
-        <footer>
-          <cite class="quote__author-position">
-            Старший Вице-президент,<br>Блок коммерции и развития бизнеса
-          </cite>
-        </footer>
-      </blockquote>
-    </section>
+    <div class="page-content__wrapper">
 
-    <section class="page-content__info-carousel info-carousel">
-      <h2 class="visually-hidden">Информация</h2>
-      <ul class="info-carousel__list">
-        <li class="info-carousel__element">
-          <header class="info-carousel__employee">
-            <img class="info-carousel__icon" src="img/tsarenko-avatar.png" width="50" height="50" alt="Царенко Владимир">
-            <h3 class="info-carousel__employee-name">Царенко Владимир<br>
-              <span class="info-carousel__employee-position">
+      <section class="page-content__intro">
+        <h2 class="visually-hidden">Вступительная часть</h2>
+        <article class="page-content__intro-video video">
+          <header class="video__header">
+            <h3 class="video__main-title">ЕВРАЗ ТВ</h3>
+            <h4 class="video__video-title">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</h4>
+          </header>
+          <video class="intro__video" poster="img/video-placeholder.png">
+            <source src="#">
+          </video>
+        </article>
+        <blockquote class="page-content__intro-quote quote">
+          <cite class="quote__author">Иванов Алексей</cite>
+          <p class="quote__text">Мы все хотим, чтобы ЕВРАЗ был эффективной компанией с высоким уровнем безопасности труда, ориентированной на запросы клиентов, поставляющей продукцию высокого качестве...</p>
+          <footer>
+            <cite class="quote__author-position">
+              Старший Вице-президент,<br>Блок коммерции и развития бизнеса
+            </cite>
+          </footer>
+        </blockquote>
+      </section>
+
+      <section class="page-content__info-carousel info-carousel">
+        <h2 class="visually-hidden">Информация</h2>
+        <ul class="info-carousel__list">
+          <li class="info-carousel__element">
+            <header class="info-carousel__employee">
+              <img class="info-carousel__icon" src="img/tsarenko-avatar.png" width="50" height="50" alt="Царенко Владимир">
+              <h3 class="info-carousel__employee-name">Царенко Владимир<br>
+                <span class="info-carousel__employee-position">
               Главный специалист ЕвразХолдинг
             </span>
-            </h3>
-          </header>
-          <ul class="info-carousel__info-list">
-            <li class="info-carousel__info-element">
-              <p class="info-carousel__date">12 декабря</p>
-              <a class="info-carousel__link" href="#">
-                <h4 class="info-carousel__text info-carousel__text--important">Встреча с представителями банка ВТБ24</h4>
-              </a>
-            </li>
-            <li class="info-carousel__info-element">
-              <p class="info-carousel__date">13 января</p>
-              <a class="info-carousel__link" href="#">
-                <h4 class="info-carousel__text info-carousel__text--document">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</h4>
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="info-carousel__controls">
-        <div class="info-carousel__arrows-wrapper">
-          <button class="info-carousel__arrow-left" title="Влево"></button>
-          <button class="info-carousel__arrow-right" title="Вправо"></button>
+              </h3>
+            </header>
+            <ul class="info-carousel__info-list">
+              <li class="info-carousel__info-element">
+                <p class="info-carousel__date">12 декабря</p>
+                <a class="info-carousel__link" href="#">
+                  <h4 class="info-carousel__text info-carousel__text--important">Встреча с представителями банка ВТБ24</h4>
+                </a>
+              </li>
+              <li class="info-carousel__info-element">
+                <p class="info-carousel__date">13 января</p>
+                <a class="info-carousel__link" href="#">
+                  <h4 class="info-carousel__text info-carousel__text--document">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</h4>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="info-carousel__controls">
+          <div class="info-carousel__arrows-wrapper">
+            <button class="info-carousel__arrow-left" title="Влево"></button>
+            <button class="info-carousel__arrow-right" title="Вправо"></button>
+          </div>
+          <div class="info-carousel__toggles-wrapper">
+            <span class="info-carousel__toggle"></span>
+            <span class="info-carousel__toggle info-carousel__toggle--active"></span>
+            <span class="info-carousel__toggle"></span>
+            <span class="info-carousel__toggle"></span>
+            <span class="info-carousel__toggle"></span>
+          </div>
         </div>
-        <div class="info-carousel__toggles-wrapper">
-          <span class="info-carousel__toggle"></span>
-          <span class="info-carousel__toggle info-carousel__toggle--active"></span>
-          <span class="info-carousel__toggle"></span>
-          <span class="info-carousel__toggle"></span>
-          <span class="info-carousel__toggle"></span>
-        </div>
-      </div>
-    </section>
+      </section>
+
+    </div>
 
     <section class="page-content__news news">
       <h2 class="visually-hidden">Новости</h2>
@@ -215,10 +219,8 @@
       </section>
 
       <section class="footer__element">
-        <div class="footer__stocks-wrapper">
           <h2 class="footer__element-header">Биржевые котировки</h2>
           <p class="footer__text">28 декабря 12:35 (GMT)</p>
-        </div>
 
         <div class="footer__stocks-wrapper">
           <p class="footer__text footer__text--price">

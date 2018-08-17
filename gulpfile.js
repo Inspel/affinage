@@ -43,7 +43,7 @@ gulp.task('html', function () {
 gulp.task('copy', function () {
   return gulp.src([
     'source/*.html',
-    'source/css/*.css',
+    'source/css/*.min.css',
     'source/fonts/*',
     'source/img/*.{jpg,svg,png}'
   ], {

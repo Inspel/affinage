@@ -35,6 +35,11 @@ gulp.task('images', function () {
     .pipe(gulp.dest('source/img'));
 });
 
+gulp.task('html', function () {
+  return gulp.src('source/*.html')
+    .pipe(gulp.dest('build'));
+});
+
 gulp.task('copy', function () {
   return gulp.src([
     'source/*.html',
@@ -54,6 +59,7 @@ gulp.task('clean', function () {
 gulp.task('build', function (done) {
   run(
     'clean',
+    'html',
     'images',
     'style',
     'copy',

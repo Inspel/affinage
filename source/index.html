@@ -9,8 +9,9 @@
 <body>
 
 <header class="page-header">
+
   <div class="page-header__upper-block upper-block">
-    <img class="upper-block__logo" src="#" title="логотип &quot;ЕВРАЗ&quot;">
+    <img class="upper-block__logo" src="img/main-logo.png" width="69" height="20" alt="логотип &laquo;ЕВРАЗ&raquo;">
     <span class="upper-block__number">73</span>
     <ul class="upper-block__services-list">
       <li class="upper-block__service-element">
@@ -31,11 +32,11 @@
       <input type="search" class="upper-block" name="q" placeholder="Поиск">
     </form>
     <a class="upper-block__messages-link">
-      <img class="upper-block__messages-icon" src="#">
+      <img class="upper-block__messages-icon" src="img/messages.png" width="23" height="16" alt="Ваши сообщения">
       <span class="upper-block__messages-counter">12</span>
     </a>
     <a class="upper-block__user-link button">
-      <img class="upper-block__user-pic" src="#">
+      <img class="upper-block__user-pic" src="img/userpic.png" width="30" height="30" alt="Пользователь">
       <span class="upper-block__user-name">Александр</span>
     </a>
   </div>
@@ -66,14 +67,18 @@
 </header>
 
 <main class="page-content">
+
   <h1 class="visually-hidden">Наша компания</h1>
+
   <div class="page-content__intro intro">
     <article class="intro__video-block video">
       <header class="video__header">
         <h2 class="video__main-title">ЕВРАЗ ТВ</h2>
         <h3 class="video__video-title">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</h3>
       </header>
-      <video class="intro__video" src="#"></video>
+      <video class="intro__video" poster="img/video-placeholder.png">
+        <source src="#">
+      </video>
     </article>
     <blockquote class="intro__quote quote">
       <cite class="quote__author">Иванов Алексей</cite>
@@ -91,7 +96,7 @@
     <ul class="info-carousel__list">
       <li class="info-carousel__element">
         <header class="info-carousel__employee">
-          <img class="info-carousel__icon" src="#" alt="Царенко Владимир">
+          <img class="info-carousel__icon" src="img/tsarenko-avatar.png" width="50" height="50" alt="Царенко Владимир">
           <h3 class="info-carousel__employee-name">Царенко Владимир<br>
             <span class="info-carousel__employee-position">
               Главный свециалист
@@ -135,7 +140,7 @@
       <li class="news__element">
         <article class="news__card">
           <a class="news__link--south">
-            <img class="news__image" src="#" alt="Иллюстрация">
+            <img class="news__image" src="img/muk96-illustation.jpg" width="220" height="165" alt="Иллюстрация">
             <h3 class="news__title">ЕВРАЗ передал здание шахты &laquo;МУК-96&raquo; Междуреченску</h3>
           </a>
           <p class="news__date">Сегодня</p>
@@ -144,7 +149,7 @@
       <li class="news__element">
         <article class="news__card">
           <a class="news__link--south">
-            <img class="news__image" src="#" alt="Иллюстрация">
+            <img class="news__image" src="img/loto-illustration.jpg" width="220" height="165" alt="Иллюстрация">
             <h3 class="news__title">На теплоэлектроцентрали ЕВРАЗ Южкокса внедрили систему LOTO</h3>
           </a>
           <p class="news__date">Сегодня</p>
@@ -153,7 +158,7 @@
       <li class="news__element">
         <article class="news__card">
           <a class="news__link--zsmk">
-            <img class="news__image" src="#" alt="Иллюстрация">
+            <img class="news__image" src="img/visit-illustration.jpg" width="220" height="165" alt="Иллюстрация">
             <h3 class="news__title">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</h3>
           </a>
           <p class="news__date">Вчера</p>
@@ -162,7 +167,7 @@
       <li class="news__element">
         <article class="news__card">
           <a class="news__link--ntmk">
-            <img class="news__image" src="#" alt="Иллюстрация">
+            <img class="news__image" src="img/efficiency-illustration.jpg" width="220" height="165" alt="Иллюстрация">
             <h3 class="news__title">ЕВРАЗ НТМК повышает эффективность выплавки стали</h3>
           </a>
           <p class="news__date">19 декабря</p>
@@ -170,17 +175,19 @@
       </li>
     </ul>
     <div class="news__buttons-wrapper">
-      <a class="news__button-all button">ВСЕ НОВОСТИ</a>
-      <a class="news__button-region button">МОЙ РЕГИОН</a>
+      <a class="news__button-all button" href="#">ВСЕ НОВОСТИ</a>
+      <a class="news__button-region button" href="#">МОЙ РЕГИОН</a>
     </div>
   </section>
 
-  <footer>
+  <footer class="footer">
+
     <section class="footer__element">
       <h2 class="visually-hidden">Наши сотрудники важны для нас</h2>
-      <img class="footer__logo" src="#" alt="ЕВРАЗ">
+      <img class="footer__logo" src="img/footer-logo.png" width="101" height="16" alt="ЕВРАЗ">
       <p class="footer__text">Мы ценим своих сотрудников и создаем возможности для их профессионального развития и карьерного роста</p>
     </section>
+
     <section class="footer__element">
       <h2 class="footer__element-header footer__element-header--hotline">Горячая линия</h2>
       <ul class="footer__hotline-list">
@@ -200,9 +207,10 @@
           </p>
         </li>
       </ul>
-      <a class="footer__hotline-email">vopros@evraz.com</a>
-      <a class="footer__hotline-message-link button">Написать в горячую линию</a>
+      <a class="footer__hotline-email" href="#">vopros@evraz.com</a>
+      <a class="footer__hotline-message-link button" href="#">Написать в горячую линию</a>
     </section>
+
     <section class="footer__element">
       <div class="footer__stocks-wrapper">
         <h2 class="footer__element-header">Биржевые котировки</h2>
@@ -231,8 +239,37 @@
         </div>
       </div>
 
-
     </section>
+
+    <div class="footer__element">
+
+      <section class="footer__portal-wrapper">
+        <h2 class="footer__element-header">Портал</h2>
+        <nav class="footer__portal-navigation">
+          <ul class="footer__portal-list">
+            <li class="footer__portal-element">
+              <a class="footer__portal-link" href="#">Обратная связь</a>
+            </li>
+            <li class="footer__portal-element">
+              <a class="footer__portal-link" href="#">Карта разделов портала</a>
+            </li>
+            <li class="footer__portal-element">
+              <a class="footer__portal-link" href="#">Заявка в Service Desk</a>
+            </li>
+            <li class="footer__portal-element">
+              <a class="footer__portal-link" href="#">Помощь</a>
+            </li>
+            <li class="footer__portal-element">
+              <a class="footer__portal-link" href="#">Команда</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <p class="footer__error-instruction">Если вы нашли ошибку, выделите ее курсором, нажмите одновременно клавиши &laquo;CTRL&raquo; и &laquo;ENTER&raquo; и мы скорректируем неточность. </p>
+
+    </div>
+
   </footer>
 
 </main>

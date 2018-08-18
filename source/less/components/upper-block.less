@@ -46,6 +46,11 @@
   letter-spacing: 1px;
   color: @color-main-text;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .upper-block__service-element {
@@ -137,6 +142,7 @@
 }
 
 .upper-block__messages-counter {
+  box-sizing: border-box;
   display: flex;
   position: absolute;
   right: -9px;
@@ -152,12 +158,19 @@
   border-radius: 4px;
   color: white;
   background-color: @color-important;
+
+  .upper-block__messages-link:hover & {
+    color: @color-important;
+    background-color: white;
+    border: 1px solid @color-important;
+  }
 }
 
 .upper-block__user-link {
   display: flex;
   width: 142px;
   align-items: center;
+  justify-content: flex-start;
   padding-top: 6px;
   padding-left: 6px;
   padding-bottom: 6px;
@@ -168,6 +181,7 @@
 }
 
 .upper-block__user-name {
+  font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 16.8px;

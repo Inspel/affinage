@@ -16,7 +16,42 @@
 }
 
 .news__link {
+  position: relative;
   text-decoration: none;
+
+  &:before {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    left: 11px;
+    bottom: 13px;
+    width: 60px;
+    height: 60px;
+    padding-left: 8px;
+    padding-bottom: 10px;
+    content: '';
+    font-family: 'Pragmatica', 'Helvetica', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: white;
+    background-color: transparent;
+  }
+
+  &--south:before {
+    content: 'ЮГ';
+    background-color: #fcb53b;
+  }
+
+  &--zsmk:before {
+    content: 'ЗСМК';
+    background-color: @color-important;
+  }
+
+  &--ntmk:before {
+    content: 'НТМК';
+    background-color: #f57f29;
+  }
 }
 
 .news__image {
@@ -25,6 +60,7 @@
 
 .news__title {
   margin: 0;
+  margin-bottom: 13px;
   padding-left: 11px;
   padding-right: 15px;
   font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
@@ -34,12 +70,21 @@
 }
 
 .news__date {
+  margin: 0;
+  padding-left: 14px;
+  font-size: 12px;
   font-weight: 300;
   line-height: 14.4px;
   color: #7f8085
 }
 
 .news__buttons-wrapper {
+  display: flex;
   width: 325px;
   margin: 0 auto;
+}
+
+.news__button {
+  width: 152px;
+  justify-content: flex-start;
 }

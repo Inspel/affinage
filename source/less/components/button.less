@@ -1,5 +1,7 @@
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   height: 40px;
   font-size: 10px;
@@ -7,9 +9,13 @@
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  text-align: center;
   color: @color-main-text;
   background-color: @color-button;
   border-radius: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: #fcbc4e;
+  }
 
 }

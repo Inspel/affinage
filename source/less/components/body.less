@@ -1,3 +1,17 @@
 body {
+  position: relative;
+  margin: 0;
   font-family: 'Pragmatica', 'Helvetica', sans-serif;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 62.3vw;
+    height: 670px;
+    left: 0;
+    top: 0;
+    background-color: #f6f6f6;
+    z-index: -1;
+  }
 }

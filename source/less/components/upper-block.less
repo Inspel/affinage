@@ -1,39 +1,177 @@
 .upper-block {
   display: flex;
+  align-items: center;
+}
+
+.upper-block__logo {
+  margin-right: 111px;
 }
 
 .upper-block__number {
-  font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
+  display: flex;
+  width: 56px;
+  height: 56px;
+  margin-right: 40px;
+  font-family: 'Pragmatica', 'Helvetica', sans-serif;
   font-size: 24px;
   line-height: 28.8px;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
   color: @color-main-text;
-  background-color: @color-light-gray;
+  border: 2px solid #a7a9ac;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: @color-light-gray;
+    border-color: @color-light-gray;
+  }
 }
 
 .upper-block__services-list {
   display: flex;
+  margin-right: 56px;
+  padding: 0;
+  width: 552px;
+  justify-content: space-between;
   list-style: none;
 }
 
 .upper-block__service-link {
-  font-weight: 300;
-  line-height: 24.64px;
+  font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
+  position: relative;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1px;
   color: @color-main-text;
   text-decoration: none;
 }
 
+.upper-block__service-element {
+  box-sizing: border-box;
+
+  & .upper-block__service-link:before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 28px;
+    left: -40px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  &--bus {
+    padding-left: 40px;
+    width: 107px;
+
+    & .upper-block__service-link:before {
+      background-image: url("../img/bus.png");
+    }
+  }
+
+  &--canteen {
+    padding-left: 35px;
+    width: 105px;
+
+    & .upper-block__service-link:before {
+      background-image: url("../img/canteen.png");
+      background-position: 2px center;
+    }
+  }
+
+  &--floors {
+    padding-left: 35px;
+    width: 85px;
+
+    & .upper-block__service-link:before {
+      left: -44px;
+      background-image: url("../img/floor.png");
+      background-position: 2px center;
+    }
+  }
+
+  &--territories {
+    padding-left: 38px;
+    width: 121px;
+
+    & .upper-block__service-link:before {
+      background-image: url("../img/marker.png");
+      background-position: 3px center;
+    }
+  }
+}
+
+.upper-block__search-form {
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+}
+
 .upper-block__search-input {
+  width: 70px;
   font-size: 14px;
   font-weight: 300;
   line-height: 16.8px;
-  color: @color-gray
+  color: @color-gray;
+  border: none;
+}
+
+.upper-block__search-submit {
+  width: 16px;
+  height: 16px;
+  margin-right: 19px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/search-icon.png");
+  background-repeat: no-repeat;
+}
+
+.upper-block__messages-link {
+  width: 23px;
+  height: 16px;
+  display: flex;
+  margin-right: 46px;
+  position: relative;
+  align-items: center;
+}
+
+.upper-block__messages-counter {
+  display: flex;
+  position: absolute;
+  right: -9px;
+  top: -8px;
+  width: 15px;
+  height: 14px;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  line-height: 9.6px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  color: white;
+  background-color: @color-important;
+}
+
+.upper-block__user-link {
+  display: flex;
+  width: 142px;
+  align-items: center;
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+}
+
+.upper-block__user-pic {
+  margin-right: 14px;
 }
 
 .upper-block__user-name {
   font-size: 14px;
   font-weight: 300;
   line-height: 16.8px;
+  letter-spacing: 0.5px;
   color: @color-main-text;
+  text-transform: capitalize;
 }

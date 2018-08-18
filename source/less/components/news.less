@@ -1,10 +1,32 @@
 .news__list {
   margin: 0 auto;
+  padding: 0;
   display: flex;
+  width: 940px;
   list-style: none;
 }
 
+.news__element {
+  width: 220px;
+  margin-right: 20px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.news__link {
+  text-decoration: none;
+}
+
+.news__image {
+  margin-bottom: 20px;
+}
+
 .news__title {
+  margin: 0;
+  padding-left: 11px;
+  padding-right: 15px;
   font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
   font-size: 13px;
   line-height: 18.2px;

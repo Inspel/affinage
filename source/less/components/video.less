@@ -1,15 +1,33 @@
+.video {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-left: 315px;
+}
+
 .video__main-title {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 2px;
   font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
   font-size: 14px;
   line-height: 19.6px;
+  font-weight: 300;
   text-transform: uppercase;
   color: @color-gray;
 }
 
 .video__video-title {
+  width: 230px;
+  margin: 0;
   font-family: 'Pragmatica', 'Helvetica', sans-serif;
   font-size: 16px;
+  letter-spacing: 0.4px;
   line-height: 19.2px;
   font-weight: bold;
   color: @color-main-text;
+}
+
+.video__link {
+  margin-right: 15px;
 }

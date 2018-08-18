@@ -1,11 +1,25 @@
+.navigation {
+  padding-left: 4px;
+  padding-right: 1px;
+}
+
 .navigation__nav-list {
+  margin: 0;
+  padding: 0;
   display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
+.navigation__nav-element {
+  height: 42px;
+}
+
 .navigation__nav-link {
+  position: relative;
   font-size: 12px;
   line-height: 14.4px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   color: @color-main-text;
   text-decoration: none;
@@ -13,10 +27,35 @@
   &:hover,
   &:focus {
     color: @color-nav-hover;
+
+    &:before {
+      position: absolute;
+      top: 15px;
+      width: 100%;
+      content: '';
+      height: 2px;
+      background-color: @color-nav-hover;
+    }
   }
 
   &--active {
     color: @color-nav-hover;
+
+    &:before {
+      position: absolute;
+      top: 37px;
+      width: 100%;
+      content: '';
+      height: 2px;
+      background-color: @color-nav-hover;
+    }
+
+    &:hover,
+    &:focus {
+      &:before {
+        top: 37px;
+      }
+    }
   }
 }
 

@@ -16,16 +16,16 @@
       <img class="upper-block__logo" src="img/main-logo.png" width="69" height="20" alt="логотип &laquo;ЕВРАЗ&raquo;">
       <span class="upper-block__number">73</span>
       <ul class="upper-block__services-list">
-        <li class="upper-block__service-element">
+        <li class="upper-block__service-element upper-block__service-element--bus">
           <a class="upper-block__service-link" href="#">Автобусы</a>
         </li>
-        <li class="upper-block__service-element">
+        <li class="upper-block__service-element upper-block__service-element--canteen">
           <a class="upper-block__service-link" href="#">Столовая</a>
         </li>
-        <li class="upper-block__service-element">
+        <li class="upper-block__service-element upper-block__service-element--floors">
           <a class="upper-block__service-link" href="#">Этажи</a>
         </li>
-        <li class="upper-block__service-element">
+        <li class="upper-block__service-element upper-block__service-element--territories">
           <a class="upper-block__service-link" href="#">Территории</a>
         </li>
       </ul>
@@ -45,22 +45,22 @@
 
     <nav class="page-header__navigation navigation">
       <ul class="navigation__nav-list">
-        <li class="navigation__nav-item">
+        <li class="navigation__nav-element">
           <a class="navigation__nav-link navigation__nav-link--active">Наша компания</a>
         </li>
-        <li class="navigation__nav-item">
+        <li class="navigation__nav-element">
           <a class="navigation__nav-link" href="#">Наша команда</a>
         </li>
-        <li class="navigation__nav-item">
+        <li class="navigation__nav-element">
           <a class="navigation__nav-link" href="#">Моя безопасность</a>
         </li>
-        <li class="navigation__nav-item">
+        <li class="navigation__nav-element">
           <a class="navigation__nav-link" href="#">Управляющая компания</a>
         </li>
-        <li class="navigation__nav-item">
+        <li class="navigation__nav-element">
           <a class="navigation__nav-link" href="#">Справочники</a>
         </li>
-        <li class="navigation__nav-item">
+        <li class="navigation__nav-element">
           <a class="navigation__nav-link" href="#">Сервисы</a>
         </li>
       </ul>
@@ -74,14 +74,13 @@
 
     <div class="page-content__wrapper">
 
-      <section class="page-content__intro">
-        <h2 class="visually-hidden">Вступительная часть</h2>
+      <section class="page-content__intro-wrapper">
         <article class="page-content__intro-video video">
           <header class="video__header">
-            <h3 class="video__main-title">ЕВРАЗ ТВ</h3>
-            <h4 class="video__video-title">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</h4>
+            <h2 class="video__main-title">ЕВРАЗ ТВ</h2>
+            <h3 class="video__video-title">65-летие Рельсобалочного цеха ЕВРАЗ НТМК</h3>
           </header>
-          <video class="intro__video" poster="img/video-placeholder.png">
+          <video class="video__link" poster="img/video-placeholder.png">
             <source src="#">
           </video>
         </article>
@@ -109,16 +108,16 @@
               </h3>
             </header>
             <ul class="info-carousel__info-list">
-              <li class="info-carousel__info-element">
+              <li class="info-carousel__info-element info-carousel__info-element--important">
                 <p class="info-carousel__date">12 декабря</p>
                 <a class="info-carousel__link" href="#">
-                  <h4 class="info-carousel__text info-carousel__text--important">Встреча с представителями банка ВТБ24</h4>
+                  <h4 class="info-carousel__text">Встреча с представителями<br>банка ВТБ24</h4>
                 </a>
               </li>
-              <li class="info-carousel__info-element">
+              <li class="info-carousel__info-element info-carousel__info-element--document">
                 <p class="info-carousel__date">13 января</p>
                 <a class="info-carousel__link" href="#">
-                  <h4 class="info-carousel__text info-carousel__text--document">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</h4>
+                  <h4 class="info-carousel__text">О проведении в 2017 году соревнований по горным лыжам и сноуборду имени Андрея Севенюка</h4>
                 </a>
               </li>
             </ul>
@@ -126,15 +125,15 @@
         </ul>
         <div class="info-carousel__controls">
           <div class="info-carousel__arrows-wrapper">
-            <button class="info-carousel__arrow-left" title="Влево"></button>
-            <button class="info-carousel__arrow-right" title="Вправо"></button>
+            <button class="info-carousel__arrow-left arrow-button" title="Влево"></button>
+            <button class="info-carousel__arrow-right arrow-button" title="Вправо"></button>
           </div>
           <div class="info-carousel__toggles-wrapper">
-            <span class="info-carousel__toggle"></span>
-            <span class="info-carousel__toggle info-carousel__toggle--active"></span>
-            <span class="info-carousel__toggle"></span>
-            <span class="info-carousel__toggle"></span>
-            <span class="info-carousel__toggle"></span>
+            <span class="info-carousel__toggle" tabindex="0"></span>
+            <span class="info-carousel__toggle info-carousel__toggle--active" tabindex="0"></span>
+            <span class="info-carousel__toggle" tabindex="0"></span>
+            <span class="info-carousel__toggle" tabindex="0"></span>
+            <span class="info-carousel__toggle" tabindex="0"></span>
           </div>
         </div>
       </section>
@@ -146,7 +145,7 @@
       <ul class="news__list">
         <li class="news__element">
           <article class="news__card">
-            <a class="news__link--south">
+            <a class="news__link news__link--south" href="#">
               <img class="news__image" src="img/muk96-illustation.jpg" width="220" height="165" alt="Иллюстрация">
               <h3 class="news__title">ЕВРАЗ передал здание шахты &laquo;МУК-96&raquo; Междуреченску</h3>
             </a>
@@ -155,7 +154,7 @@
         </li>
         <li class="news__element">
           <article class="news__card">
-            <a class="news__link--south">
+            <a class="news__link news__link--south" href="#">
               <img class="news__image" src="img/loto-illustration.jpg" width="220" height="165" alt="Иллюстрация">
               <h3 class="news__title">На теплоэлектроцентрали ЕВРАЗ Южкокса внедрили систему LOTO</h3>
             </a>
@@ -164,7 +163,7 @@
         </li>
         <li class="news__element">
           <article class="news__card">
-            <a class="news__link--zsmk">
+            <a class="news__link news__link--zsmk" href="#">
               <img class="news__image" src="img/visit-illustration.jpg" width="220" height="165" alt="Иллюстрация">
               <h3 class="news__title">ЕВРАЗ ЗСМК посетили представители ключевого дилера строительного металлопроката</h3>
             </a>
@@ -173,7 +172,7 @@
         </li>
         <li class="news__element">
           <article class="news__card">
-            <a class="news__link--ntmk">
+            <a class="news__link news__link--ntmk" href="#">
               <img class="news__image" src="img/efficiency-illustration.jpg" width="220" height="165" alt="Иллюстрация">
               <h3 class="news__title">ЕВРАЗ НТМК повышает эффективность выплавки стали</h3>
             </a>

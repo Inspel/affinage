@@ -12,7 +12,7 @@
   width: 56px;
   height: 56px;
   margin-right: 40px;
-  font-family: 'Pragmatica', 'Helvetica', sans-serif;
+  font-family: "Pragmatica", "Helvetica", sans-serif;
   font-size: 24px;
   line-height: 28.8px;
   font-weight: bold;
@@ -24,8 +24,8 @@
 
   &:hover,
   &:focus {
-    background-color: @color-light-gray;
-    border-color: @color-light-gray;
+    background-color: @color-toggles;
+    border-color: @color-toggles;
   }
 }
 
@@ -39,7 +39,7 @@
 }
 
 .upper-block__service-link {
-  font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
+  font-family: "Pragmatica Book", "Helvetica", sans-serif;
   position: relative;
   font-size: 14px;
   line-height: 28px;
@@ -47,18 +47,9 @@
   color: @color-main-text;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-}
-
-.upper-block__service-element {
-  box-sizing: border-box;
-
-  & .upper-block__service-link:before {
+  .upper-block__service-element &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 40px;
     height: 28px;
     left: -40px;
@@ -66,44 +57,53 @@
     background-position: left center;
   }
 
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  .upper-block__service-element--bus &::before {
+    background-image: url("../img/bus.png");
+  }
+
+  .upper-block__service-element--canteen &::before {
+    background-image: url("../img/canteen.png");
+    background-position: 2px center;
+  }
+
+  .upper-block__service-element--floors &::before {
+    left: -44px;
+    background-image: url("../img/floor.png");
+    background-position: 2px center;
+  }
+
+  .upper-block__service-element--territories &::before {
+    background-image: url("../img/marker.png");
+    background-position: 3px center;
+  }
+}
+
+.upper-block__service-element {
+  box-sizing: border-box;
+
   &--bus {
     padding-left: 40px;
     width: 107px;
-
-    & .upper-block__service-link:before {
-      background-image: url("../img/bus.png");
-    }
   }
 
   &--canteen {
     padding-left: 35px;
     width: 105px;
-
-    & .upper-block__service-link:before {
-      background-image: url("../img/canteen.png");
-      background-position: 2px center;
-    }
   }
 
   &--floors {
     padding-left: 35px;
     width: 85px;
-
-    & .upper-block__service-link:before {
-      left: -44px;
-      background-image: url("../img/floor.png");
-      background-position: 2px center;
-    }
   }
 
   &--territories {
     padding-left: 38px;
     width: 121px;
-
-    & .upper-block__service-link:before {
-      background-image: url("../img/marker.png");
-      background-position: 3px center;
-    }
   }
 }
 
@@ -118,7 +118,7 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 16.8px;
-  color: @color-gray;
+  color: @color-search;
   border: none;
 }
 
@@ -130,6 +130,7 @@
   background-color: transparent;
   background-image: url("../img/search-icon.png");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .upper-block__messages-link {
@@ -181,7 +182,7 @@
 }
 
 .upper-block__user-name {
-  font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
+  font-family: "Pragmatica Book", "Helvetica", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 16.8px;

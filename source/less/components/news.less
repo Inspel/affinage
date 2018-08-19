@@ -20,7 +20,7 @@
   position: relative;
   text-decoration: none;
 
-  &:before {
+  &::before {
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
@@ -31,27 +31,32 @@
     height: 60px;
     padding-left: 8px;
     padding-bottom: 10px;
-    content: '';
-    font-family: 'Pragmatica', 'Helvetica', sans-serif;
+    content: "";
+    font-family: "Pragmatica", "Helvetica", sans-serif;
     font-size: 13px;
     font-weight: 900;
     color: white;
     background-color: transparent;
   }
 
-  &--south:before {
-    content: 'ЮГ';
-    background-color: #fcb53b;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 
-  &--zsmk:before {
-    content: 'ЗСМК';
+  &--south::before {
+    content: "ЮГ";
+    background-color: @color-south;
+  }
+
+  &--zsmk::before {
+    content: "ЗСМК";
     background-color: @color-important;
   }
 
-  &--ntmk:before {
-    content: 'НТМК';
-    background-color: #f57f29;
+  &--ntmk::before {
+    content: "НТМК";
+    background-color: @color-ntmk;
   }
 }
 
@@ -64,7 +69,7 @@
   margin-bottom: 13px;
   padding-left: 11px;
   padding-right: 15px;
-  font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
+  font-family: "Pragmatica Book", "Helvetica", sans-serif;
   font-size: 13px;
   line-height: 18.2px;
   color: @color-main-text;
@@ -76,16 +81,46 @@
   font-size: 12px;
   font-weight: 300;
   line-height: 14.4px;
-  color: #7f8085
+  color: @color-footer-text;
 }
 
 .news__buttons-wrapper {
   display: flex;
   width: 325px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .news__button {
+  position: relative;
   width: 152px;
   justify-content: flex-start;
+
+  &--all {
+    padding-left: 49px;
+
+    &::before {
+      position: absolute;
+      top: 11px;
+      left: 13px;
+      content: "";
+      width: 26px;
+      height: 20px;
+      background-image: url("../img/allnews.png");
+    }
+  }
+
+  &--region {
+    padding-left: 44px;
+
+    &::before {
+      position: absolute;
+      top: 11px;
+      left: 17px;
+      content: "";
+      width: 14px;
+      height: 20px;
+      background-image: url("../img/region.png");
+    }
+  }
 }

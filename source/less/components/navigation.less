@@ -28,11 +28,11 @@
   &:focus {
     color: @color-nav-hover;
 
-    &:before {
+    &::before {
       position: absolute;
       top: 15px;
       width: 100%;
-      content: '';
+      content: "";
       height: 2px;
       background-color: @color-nav-hover;
     }
@@ -41,18 +41,18 @@
   &--active {
     color: @color-nav-hover;
 
-    &:before {
+    &::before {
       position: absolute;
       top: 37px;
       width: 100%;
-      content: '';
+      content: "";
       height: 2px;
       background-color: @color-nav-hover;
     }
 
     &:hover,
     &:focus {
-      &:before {
+      &::before {
         top: 37px;
       }
     }

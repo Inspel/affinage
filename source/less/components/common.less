@@ -5,15 +5,26 @@
   margin: 0 auto;
   padding: 21px 25px 0;
 
-  &:before {
-      position: absolute;
-      content: '';
-      width: 441px;
-      height: 670px;
-      right: 0;
-      top: 0;
-      background-color: white;
-      z-index: -1;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 441px;
+    height: 670px;
+    right: 0;
+    top: 0;
+    background-color: white;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 230px;
+    left: 340px;
+    top: 300px;
+    background-color: @color-background;
+    z-index: -1;
   }
 }
 

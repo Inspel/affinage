@@ -1,71 +1,126 @@
 .footer {
   display: flex;
+  padding-bottom: 40px;
 }
 
-.footer__element-header {
-  font-size: 14px;
-  line-height: 12.6px;
-  font-weight: bold;
-  color: @color-main-text;
+.footer__element {
+  width: 285px;
+  margin-right: 30px;
 
-  &--hotline {
-    color: @color-important;
+  &:last-child {
+    margin-right: 0;
   }
 }
 
-.footer__hotline-description {
-  font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
-  font-size: 12px;
-  line-height: 14.4px;
-  color: @color-gray;
-}
-
-.footer__hotline-email {
-  font-family: 'Pragmatica Book', 'Helvetica', sans-serif;
-  font-size: 12px;
-  line-height: 14.4px;
-  color: @color-important;
-  text-decoration: none;
+.footer__logo {
+  margin-bottom: 27px;
 }
 
 .footer__text {
+  margin: 0;
   font-size: 12px;
   line-height: 19.2px;
   font-weight: 300;
-  color: #7f8085;
+  color: @color-footer-text;
+
+  &--employees {
+    padding-left: 3px;
+  }
 
   &--price {
     color: @color-main-text;
   }
 }
 
+.footer__hotline-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 3px;
+  list-style: none;
+}
+
+.footer__hotline-element {
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__element-header {
+  margin: 0;
+  margin-top: -2px;
+  font-size: 14px;
+  line-height: 12.6px;
+  font-weight: bold;
+  color: @color-main-text;
+
+  &--hotline {
+    margin-bottom: 14px;
+    color: @color-important;
+  }
+}
+
+.footer__hotline-description {
+  margin: 0;
+  font-family: "Pragmatica Book", "Helvetica", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  line-height: 14.4px;
+  color: @color-search;
+}
+
+.footer__hotline-email {
+  display: inline-block;
+  margin-bottom: 23px;
+  padding-left: 4px;
+  font-family: "Pragmatica", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 14.4px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: @color-important;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 .footer__hotline-number {
+  display: inline-block;
+  margin-bottom: 2px;
   font-size: 12px;
   line-height: 14.4px;
   font-weight: bold;
+  letter-spacing: -0.4px;
   color: @color-main-text;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
-.footer__stocks-wrapper {
-  display: flex;
+.footer__hotline-message-link {
+  width: 215px;
 }
 
-.footer__price-value {
-  font-weight: bold;
+.footer__portal-wrapper {
+  margin-bottom: 27px;
 }
 
-.footer__stocks-change {
-  color: #46b900;
+.footer__portal-navigation {
+  padding-top: 14px;
 }
 
-.footer__points {
-  line-height: 14.4px;
-  color: #7f8085
-}
-
-.footer__points-value {
-  font-weight: bold;
-  color: #7f8085;
+.footer__portal-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 1px;
+  list-style: none;
 }
 
 .footer__portal-link {
@@ -74,4 +129,13 @@
   line-height: 25.2px;
   color: @color-main-text;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.footer__text--bugs {
+  padding-left: 1px;
 }

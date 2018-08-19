@@ -21,6 +21,7 @@
   color: @color-main-text;
   border: 2px solid #a7a9ac;
   border-radius: 50%;
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -159,7 +160,8 @@
   color: white;
   background-color: @color-important;
 
-  .upper-block__messages-link:hover & {
+  .upper-block__messages-link:hover &,
+  .upper-block__messages-link:focus &{
     color: @color-important;
     background-color: white;
     border: 1px solid @color-important;

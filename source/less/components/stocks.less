@@ -1,0 +1,60 @@
+.stocks__wrapper {
+  display: flex;
+  padding-left: 2px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid @color-stocks-border;
+}
+
+.stocks__header {
+  margin-bottom: 18px;
+}
+
+.stocks__date {
+  padding-bottom: 15px;
+  letter-spacing: 0.2px;
+  border-bottom: 1px solid @color-stocks-border;
+}
+
+.stocks__price {
+  line-height: 18px;
+  width: 50%;
+}
+
+.stocks__price-value {
+  font-weight: bold;
+}
+
+.stocks__stocks-up {
+  position: relative;
+  letter-spacing: 0.3px;
+  color: @color-stocks-up;
+
+  &::after {
+    position: absolute;
+    right: -14px;
+    top: 5px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid @color-stocks-up;
+  }
+}
+
+.stocks__points-wrapper {
+  padding-top: 3px;
+  padding-left: 4px;
+}
+
+.stocks__points {
+  margin-bottom: 3px;
+  line-height: 14.4px;
+  color: @color-footer-text;
+}
+
+.stocks__points-value {
+  font-weight: bold;
+  color: @color-footer-text;
+}
